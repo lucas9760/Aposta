@@ -9,7 +9,8 @@ show_section() {
     local message="$2"
     echo -e "$color"
     for ((i=0; i<${#message}; i++)); do
-        echo -n "${message:$i:1}"                                  sleep 0.1
+        echo -n "${message:$i:1}"
+        sleep 0.1
     done
     echo -e "\e[0m"
     sleep 1
